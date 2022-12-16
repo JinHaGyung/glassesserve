@@ -1,9 +1,10 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "1234",
-  database: "sonytable",
+  host: "us-cdbr-east-06.cleardb.net",
+  user: "b8383cbb62291e",
+  password: "c0fbe38c",
+  database: "heroku_3cf18953e353ae1",
+  multipleStatements: true,
   dateStrings : "date"
 });
 
