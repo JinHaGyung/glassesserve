@@ -1,0 +1,127 @@
+.camera_top{
+    background-image: url(../img/10.camera/bg_cat_camera.jpg);
+    min-height: 400px;
+    padding-bottom:157px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camera_top>span{
+    font-weight: 700;
+    letter-spacing: -.025em;
+    color: #fff;
+    font-size: 80px;
+}
+.camera_pro{
+    margin: 80px auto 160px;
+    padding: 0 24px;
+}
+.camera_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.camera_title>h2{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -.025em;
+    color: #222;
+}
+.camera_title>h2>span{
+    font-size: 20px;
+    color: #888;
+}
+.camera_title>.up{
+    font-weight: 500;
+    color: #222;
+}
+.camera_product_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.camera_info{
+    width: calc(25% - 18px);
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 32px 40px 56px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background-color: #f4f7fa;
+    transition: width .4s,height .4s;
+}
+.camera_info:nth-child(4n+1) {
+    margin-left: 0;
+}
+.camera_info:nth-child(-n+4) {
+    margin-top: 0;
+}
+.new{
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(255, 77, 0);
+}
+.camera_info>img{
+    max-width: 100%;
+}
+.camera_info>h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    color: #222;
+    margin: 16px 0 6px;
+}
+.camera_info>h4{
+    height: 3em;
+    margin-bottom: 1.125em;
+    font-size: 16px;
+    letter-spacing: -.025em;
+    color: #666;
+}
+.camera_info>h5{    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: #222;
+}
+@media (max-width:1200px) {
+    .camera_product_wrap {
+        justify-content: space-between;
+    }
+    .camera_info{
+        width: calc(50% - 18px);
+        padding: 30px 32px 40px;
+    }
+    .camera_info:nth-child(odd) {
+        margin-left: 0;
+    }
+    .camera_info:nth-child(-n+2) {
+        margin-top: 0;
+    }
+    .camera_info:nth-child(-n+4) {
+        margin-top:24px
+    }
+}
+
+@media (max-width:640px) {
+    .camera_top{
+        min-height: 200px;
+        padding: 68px 0 72px;
+    }
+    .camera_top>span{
+        font-size: 48px;
+    }
+    .camera_info{
+        width: 100%;
+        padding: 24px 24px 40px;
+        margin-left: 0;
+    }
+    .camera_info:first-child {
+        margin-top: 0;
+    }
+}
+

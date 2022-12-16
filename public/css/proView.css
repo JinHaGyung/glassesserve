@@ -1,0 +1,229 @@
+.proView_wrap{
+    display: flex;
+}
+.proView_wrap>img{
+    width: 56%;
+    height: 937px;
+    background-color: #f4f7fa;
+}
+.proView_left{
+    width: 44%;
+    /* max-width: 568px; */
+    padding: 63px 8% 0;
+}
+.proViewinfo>h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+.proViewinfo>h3{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.45px;
+    color: #888;
+}
+.proViewinfo>p{
+    background-image: url(../img/10.camera/download.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 4px;
+    padding-left: 18px;
+    font-size: 12px;
+    letter-spacing: -.3px;
+    color: #5865f5;
+}
+.proPrice_wrap{
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.proPrice_wrap>p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.proPrice_wrap>p>span{
+    font-size: 28px;
+}
+.freeRide{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -.35px;
+    color: #5865f5;
+}
+.proView_left>.bar{
+    margin: 24px 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.membershipPrice{
+    margin-top: 20px;    
+}
+.membershipPrice>p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -.4px;
+}
+.membershipPrice_wrap{
+    display: flex;
+    margin-top:20px
+}
+.membershipPrice_wrap>div{
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    padding:0 0 5px 40px;
+}
+.membershipPrice_wrap>div>p{
+    color: #5865f5;
+    font-size: 12px;
+}
+.membershipPrice_wrap>div>span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #bbb;
+}
+.membershipPrice_wrap>.vip{
+    background-image: url(../img/10.camera/membership_vip.f6121d1d.svg);
+}
+.membershipPrice_wrap>.membership{
+    background-image: url(../img/10.camera/membership_family.ea303a8f.svg);
+    background-position-y: 0;
+    margin-left: 40px;
+}
+.membershipPrice_wrap>.membership>p{
+    color: #222;
+}
+.buyCount{
+    padding-top: 45px;
+}
+.buyCount>p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -.4px;
+    padding-bottom: 13px;
+}
+.proView_left>.barBold{
+    height: 2px;
+}
+.buyPrice{
+    display: flex;
+    justify-content: space-between
+}
+.buyPrice_count{
+    display: flex;
+    align-items: center;
+}
+.buyPrice_count>p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -.4px;
+}
+.buyPrice_count>span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+.buyPrice>h2>span{
+    font-size: 16px;
+    font-weight: 700;
+}
+.buyBTN{
+    display: flex;
+    margin-top: 100px;
+    /* justify-content: space-between; */
+}
+.buyBTN>div{
+    width: 64px;
+    height: 64px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.buyBTN>.buy_pay{
+    width: 70%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+}
+.procont{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.procont>h2{
+    margin-bottom: 32px;
+}
+.procont>h3{
+    margin-bottom: 24px;
+}
+.inputBtn{
+    display: flex;
+    justify-content: right;
+    margin: 50px 8%;
+}
+.inputBtn>input{
+    padding: 15px 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.clickhidden{
+    display: none;
+}
+@media (max-width:1200px) {
+    .proView_wrap{
+        flex-direction: column;
+    }
+    .proView_wrap>img {
+        width: 100%;
+    }
+    .proView_left{
+        width: 100%;
+        padding: 63px 3% 0;
+        box-sizing: border-box;
+    }
+    .procont {
+        padding: 0 3%;
+        box-sizing: border-box;
+    }
+    .inputBtn{
+        margin: 50px 3%;
+    }
+}
+@media (max-width:640px){
+    .proView_wrap>img {
+        height: 600px;
+    }
+}
+@media (max-width:380px){
+    .proView_wrap>img {
+        height: 300px;
+    }
+    .buyBTN {
+        margin-top: 30px;
+    }
+    .buyBTN>div {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .buyBTN>.buy_pay {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .proViewinfo>p {
+        background-size: auto;
+    }
+}

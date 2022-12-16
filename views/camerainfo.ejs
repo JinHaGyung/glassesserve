@@ -1,0 +1,20 @@
+<div class="camera_top">
+    <span>카메라</span>
+</div>
+<section class="camera_pro">
+    <div class="camera_title">
+        <h2>제품<span id="productCount">()</span></h2>
+        <div class="up"><a href="productUp">등록하기</a></div>
+    </div>
+    <div class="camera_product_wrap">
+        <% rows.forEach((row,index)=>{ %>
+        <div class="camera_info"onclick="javascript:location.href='/cameraView?id=<%= row.id%>'">
+            <span class="new"></span>
+            <img src="<%= row.productimg %>" alt="">
+            <h3><%= row.name %></h3>
+            <h4><%= row.info %></h4>
+            <h5><%= row.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></h5>
+        </div>
+        <% }); %>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+<form action="/productView" method="post">
+    <input type="hidden" name="id" value="<%= row.id %>">
+    <section class="proView_wrap">
+        <img src="<%= row.productimg %>" alt="">
+        <div class="proView_left">
+            <div class="proViewinfo">
+                <h2><%= row.name %></h2>
+                <h3><%= row.info %></h3>
+                <p>1인당 1대만 구매가 가능합니다. 2대 이상 주문 시 취소됩니다.</p>
+             </div>
+            <div class="proPrice_wrap">
+                <p><span><%= row.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></span> 원</p>
+                <div class="freeRide">무료배송</div>
+            </div>
+            <span class="bar"></span>
+            <div class="membershipPrice">
+                <p>회원별 마일리지 적립혜택</p>
+                <div class="membershipPrice_wrap">
+                    <div class="vip">
+                        <p>VIP 4%</p>
+                        <span><%= ((row.price)*0.04).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></span>
+                    </div>
+                    <div class="membership">
+                        <p>MEMBERSHIP 2%</p>
+                        <span><%= ((row.price)*0.02).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></span>
+                    </div>
+                </div>
+            </div>
+            <div class="buyCount">
+                <p>제품구매</p>
+                <input type="radio" name="buycount" value="1"> 1개
+                <input type="radio" name="buycount" value="2"> 2개
+            </div>
+            <span class="bar barBold"></span>
+            <div class="buyPrice">
+                <div class="buyPrice_count">
+                    <p>총 상품금액</p>
+                    <span>(총 <span class="buyNum_Count"></span>개)</span>
+                </div>
+                <h2 class="clickhidden"><span class="sum"><%= (row.price)%></span><span>원</span></h2>
+            </div>
+            <div class="buyBTN">
+                <div class="buy_heart">
+                    <img src="img/10.camera/ico_heart.e9369092.svg" alt="">
+                </div>
+                <div class="buy_buy">
+                    <img src="img/10.camera/ico_cart.4fe27ebf.svg" alt="">
+                </div>
+                <div class="buy_gift">
+                    <img src="img/10.camera/ico_gift.7e689393.svg" alt="">
+                </div>
+                <div class="buy_pay">바로 구매하기</div>
+            </div>
+        </div>
+    </section>
+    <section class="procont">
+        <h2>제품 개요</h2>
+        <h3>제품 소개</h3>
+        <p><%= row.infoimg %></p>
+    </section>
+    <div class="inputBtn">
+        <input type="button" value="수정하기" onclick="javascript:location.href='/updatePro?id=<%= row.id%>'">
+        <input type="button" value="삭제하기" onclick="javascript:location.href='/deletePro?id=<%= row.id %>'">
+    </div>
+</form>

@@ -1,0 +1,34 @@
+<section class="notice_view_wrap">
+  <div class="notice_top">
+    <h2>공지사항</h2>
+    <p>소니의 새로운 소식을 만나보세요.</p>
+  </div>
+  <h2 class="notice_view_title"><%= row.title %></h2>
+  <input type="hidden" name="id" value="<%= row.id %>">
+  <div class="notice_wrap notice_view_btn_padding">
+    <div class="notice_sql_wrap">
+      <input type="button" value="수정하기"
+      onclick="javascript:location.href='/noticeUpdate?id=<%= row.id%>'">
+      <input type="button" value="삭제하기"
+      onclick="javascript:location.href='/noticeDelete?id=<%= row.id %>'">
+    </div>
+    <div class="notice_view_info">
+      <div class="notice_view_writer">
+        <span>작성자</span>
+        <span><%= row.writer %></span>
+      </div>
+      <div class="notice_view_Pview">
+        <span>작성일</span>
+        <span class="write_date"><%= row.create_time %></span>
+      </div>
+    </div>
+    <div class="notice_view_cont">
+      <%= row.noticecont %>
+    </div>
+    <a href="notice">
+      <div class="store_list_btn">
+        <span>목록</span>
+    </div>
+  </a>
+  </div>
+</section>

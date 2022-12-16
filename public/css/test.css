@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.mobile{
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.w1380{
+  width: 1380px !important;
+  margin: 0 auto;
+}
+image.png
+.best_Rank{
+  padding-bottom: 50px;
+  background-color: #000;
+  color: #fff;
+}
+.best{
+  padding-top: 90px;
+}
+.best>.best_wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.more{
+  display: none;
+}
+.more>a{
+  color: #D6D6D6;
+  font-size: 13px;
+}
+.more_arrow{
+  display: inline-block;
+  background-image: url(../img/arrow_w.png);
+  width: 5px;
+  height: 8px;
+  background-size: 100% 100%;
+}
+.best>h3{
+  color: #D6D6D6;
+}
+.best_tab{
+  padding-top: 40px;
+  display: flex;
+}
+.best_tab>li{
+  padding:13px 40px;
+  margin-right: 10px;
+  background-color: #C3C3C3;
+  color: #000;
+  border-radius: 35px;
+  font-weight: 700;
+}
+.click{
+  background-color: #4E4E4E !important;
+  color: #fff !important;
+}
+.best_img{
+  padding-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+.best_img>div{
+  width: calc((100% - 48px) / 3);
+  height: 444px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  position: relative;
+}
+.square{
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+}
+.square>div{
+  height: inherit;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DA0F4C;
+}
+.best_img a{
+  display: block;
+  height: inherit;
+}
+.best_img_wrap{
+  width: 100%;
+  height: calc(100% - 109px);
+  display: flex;
+  align-items: center;
+}
+.best_img img{
+  margin: 0 auto;
+  width: 250px;
+}
+.best_ment{
+  padding-bottom: 37px;
+  padding-left:32px;;
+  position: absolute;
+  bottom: 0;
+}
+.best_name{
+  font-size: 20px;
+  font-weight: 600;
+}
+.best_subname{
+  font-size: 16px;
+  color: #8D8D8D;
+  margin-top: 4px;
+}
+.best_price{
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* sony_select */
+.select_wrap{
+  padding-top: 65px;
+}
+.select_wrap>h3{
+  color: #434343;
+}
+.select_itemBox{
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.select_item{
+  width: calc((100% - 70px) / 4);
+  height: 424px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #E9E9E9;
+}
+.select_img{
+  width: 100%;
+  height: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select_img>img{
+  width: 80%;
+}
+.select_ment{
+  padding-left: 30px;
+}
+.select_ment::before{
+  content: '';
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #CECECE;
+}
+.select_ment>p{
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.select_ment>h4{
+  padding-top: 4px;
+  font-size: 16px;
+  color: #666666;
+}
+.select_ment>h3{
+  padding-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+

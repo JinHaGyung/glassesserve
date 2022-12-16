@@ -1,0 +1,28 @@
+<section class="notice">
+  <div class="notice_top">
+    <h2>공지사항</h2>
+    <p>소니의 새로운 소식을 만나보세요.</p>
+  </div>
+  <div class="notice_wrap">
+    <table class="notice_table">
+      <tr class="notice_table_head">
+        <th class="notice_num">번호</th>
+        <th class="notice_tit">제목</th>
+        <th class="notice_updata">등록일</th>
+        <th class="notice_Pv">조회수</th>
+      </tr>
+      <% rows.forEach((row,index)=>{ %>
+      <tr class="notice_cont notice_list">
+        <td class="notice_bold notice_count"></td>
+        <td class="notice_bold notice_name" onclick="javascript:location.href='/notice_view?id=<%= row.id%>'"><%= row.title %></td>
+        <td class="notice_gray"><%= row.create_time %></td>
+        <td class="notice_gray" ><%= row.view %></td>
+      </tr>
+      <% }); %>
+    </table>
+    <div class="writeBtn">
+      <a href="notice_write">공지작성</a>
+    </div>
+    <p>더보기+</p>
+  </div> 
+</section>

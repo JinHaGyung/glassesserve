@@ -1,0 +1,33 @@
+  <div class="notice_top">
+    <h2>게시글 등록</h2>
+    </div>
+      <form class="noticewrite_form" action="sony_notice_write" method="post" onsubmit="return writePwCheck()">
+        <table class="noticewrite_table">
+          <tr>
+            <td class="noticewrite_left"><label for="title">제목</label></td>
+            <td class="noticewrite_right"><input type="text" name="title"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="writer">작성자</label></td>
+            <td class="noticewrite_right"><input type="text" name="writer" id="writeWriter"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="password">비밀번호</label></td>
+            <td class="noticewrite_right"><input type="password" name="password" id="writePW"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="pwcheck">비밀번호 확인</label></td>
+            <td class="noticewrite_right"><input type="password" name="pwcheck" id="writePWCheck"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="notice_cont">내용</label></td>
+            <td class="noticewrite_right"><textarea rows="20"name="notice_cont" id="notice_cont"></textarea></td>
+          </tr>
+        </table>
+        <div class="noticewrite_sub">
+          <input class="noticewrite_btn write_save" type="submit" value="저장">
+          <button class="noticewrite_btn cancle"><a href="notice">취소</a></button>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,34 @@
+<div class="notice_top">
+    <h2>상품 등록</h2>
+    </div>
+      <form class="noticewrite_form" action="/product_upload" method="post" enctype="multipart/form-data">
+        <table class="noticewrite_table">
+          <tr>
+            <td class="noticewrite_left"><label for="title">상품명</label></td>
+            <td class="noticewrite_right"><input type="text" name="product_name"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="title">상품이미지</label></td>
+            <td class="noticewrite_right"><input type="file" name="product_img"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="writer">소개</label></td>
+            <td class="noticewrite_right"><input type="text" name="product_info" id="product_info"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="writer">금액</label></td>
+            <td class="noticewrite_right"><input type="number" name="product_price" id="product_price"></td>
+          </tr>
+          <tr>
+            <td class="noticewrite_left"><label for="notice_cont">내용</label></td>
+            <td class="noticewrite_right"><textarea rows="20"name="product_sub" id=""></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="noticewrite_sub">
+          <input class="noticewrite_btn write_save" type="submit" value="저장">
+          <button class="noticewrite_btn cancle"><a href="camerainfo">취소</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
