@@ -1,5 +1,3 @@
-const e = require("express");
-
 let writeBtn = document.querySelector(".write_save");
 let writeDate = document.querySelector(".write_date");
 // 공지 작성 조건 검사하기

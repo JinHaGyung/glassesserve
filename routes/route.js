@@ -90,8 +90,7 @@ router.post('/notice_view', (req,res)=>{
 // 내용 수정하기(기존 내용을 받아오는 것)
 router.get('/noticeUpdate', (req,res)=>{
   let id = req.query.id;
-  let view = req.query.view;
-  db.getNoticebyid(id,view,(row) =>{
+  db.getNoticebyid(id,(row) =>{
     res.render('notice_corr',{row: row[0]})
   })
 })

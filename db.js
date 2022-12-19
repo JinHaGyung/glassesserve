@@ -1,17 +1,17 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: "us-cdbr-east-06.cleardb.net",
-  user: "b8383cbb62291e",
-  password: "c0fbe38c",
-  database: "heroku_3cf18953e353ae1",
-  multipleStatements: true,
-  dateStrings : "date"
+  host: "localhost",
+  user: "root",
+  password: "1234",
+  database: "sonytable",
+  dateStrings : "date",
+  multipleStatements: true
 });
 
-connection.connect(function(err) {
-  if (err) throw err;
-  console.log("connected!");
-});
+// connection.connect(function(err) {
+//   if (err) throw err;
+//   console.log("connected!");
+// });
 
 // 회원가입(데이터 보내기)
 function userjoin(mailId,pw,name,birth,callback){
