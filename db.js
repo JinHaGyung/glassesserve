@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "1234",
+  host: "sonytable.c1twpfacjz0u.ap-northeast-1.rds.amazonaws.com",
+  user: "admin",
+  password: "sonypass",
   database: "sonytable",
   dateStrings : "date",
   multipleStatements: true
