@@ -135,7 +135,7 @@ function updateProduct(id,name,img,price,info,cont,callback){
 module.exports = {
   /* 회원가입*/ userjoin,/*로그인 */logincheck,
   //게시판
-  writenotice,getNotice,getNoticebyid,updateView,updateNotice,deleteByid, noticeCount,
+  writenotice,getNotice,getNoticebyid,updateNotice,deleteByid, noticeCount,
   // 상품(썸네일)
   insertProduct,getProduct,getProbyid,delProbyid,updateProduct
 }
