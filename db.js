@@ -38,14 +38,14 @@ function writenotice(title,writer,password,notice_cont,callback){
 }
 // 공지 리스트
 function getNotice(callback){
-  connection.query('SELECT * FROM sonynotice ORDER BY id desc',(err,rows)=>{
+  connection.query(`SELECT * FROM sonynotice ORDER BY id desc` ,(err,rows)=>{
     if (err) throw err;
     callback(rows);
   })
 }
 //상세 페이지로 가기
 function getNoticebyid(id,callback){
-  connection.query(`Select * FROM sonynotice where id =${id}`, 
+  connection.query(`Select * FROM sonynotice where id =${id}` + `UPDATE kbnotice SET view = view + 1 WHERE id = ${id};`, 
   (err,row)=>
   {if (err) throw err
   callback(row);});
