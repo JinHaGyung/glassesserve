@@ -45,19 +45,19 @@ function getNotice(callback){
 }
 //상세 페이지로 가기
 function getNoticebyid(id,callback){
-  connection.query(`Select * FROM sonynotice where id =${id}` + `UPDATE kbnotice SET view = view + 1 WHERE id = ${id};`, 
+  connection.query(`Select * FROM sonynotice where id =${id}` + `UPDATE sonynotice SET view = view + 1 WHERE id = ${id};`, 
   (err,row)=>
   {if (err) throw err
   callback(row);});
 }
 // 클릭시 조회수 추가하기
-function updateView(id,view,callback){
-  connection.query(`UPDATE sonynotice set view='${view+1}' where id = ${id}`,
-  (err) => {
-    if (err) throw err;
-    callback()
-  });
-}
+// function updateView(id,view,callback){
+//   connection.query(`UPDATE sonynotice set view='${view+1}' where id = ${id}`,
+//   (err) => {
+//     if (err) throw err;
+//     callback()
+//   });
+// }
 // 내용 수정하기(기존 내용을 받아오는 것)
 function getNoticebyid(id,callback){
   connection.query(`Select * FROM sonynotice where id =${id}`, 
