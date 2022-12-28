@@ -45,7 +45,7 @@ function getNotice(callback){
 }
 //상세 페이지로 가기
 function getNoticebyid(id,callback){
-  connection.query(`Select * FROM sonynotice where id =${id}`, 
+  connection.query(`Select * FROM sonynotice where id =${id}` + `UPDATE sonynotice SET view = view + 1 WHERE id = ${id};`, 
   (err,row)=>
   {if (err) throw err
   callback(row);});
