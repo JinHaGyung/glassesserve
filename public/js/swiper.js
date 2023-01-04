@@ -25,6 +25,10 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     380: {
       slidesPerView: 2,
       spaceBetween: 10,
@@ -49,13 +53,20 @@ var swiper = new Swiper(".selectSwiper", {
     clickable: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+      loop: true
+    },
     380: {
       slidesPerView: 2,
       spaceBetween: 15,
+      loop: true
     },
     767: {
       slidesPerView: 3,
       spaceBetween: 10,
+      loop: true
     },
     1024: {
       slidesPerView: 4,
@@ -65,18 +76,26 @@ var swiper = new Swiper(".selectSwiper", {
 });
 // 정품등록이벤트
 var swiper = new Swiper(".regoSwiper", {
-  slidesPerView: 0,
+  slidesPerView: 3,
   spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
     380: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
     767: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
