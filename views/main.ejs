@@ -1,564 +1,91 @@
-<main>
-  <!-- slide -->
-  <section class="slide Swiper">
-    <ul class="slide_cont swiper-wrapper">
-      <li class="vlog swiper-slide"><a href="">
-        <div class="vlog_left">
-          <div class="vlog_logo desk">
-          </div>
-          <p>콘텐츠 크리에이터와<br> 
-            브이로거를 위한<br> 
-            <span class="desk">최고의 업그레이드 제품</span></p>
-            <span class="s_font">브이로그 카메라 ZV-1F</span>
-        </div>
-        <div class="vlog_right"></div>
-      </a></li>
-      <li class="a7 swiper-slide"><a href="">
-        <div class="a7ment">
-          <p>기본을 넘어<br>
-            차세대의 이미지 메이커를 위해</p> 
-          <div class="a7logo">
-            <img src="img/sony_logo_white.png" alt="">
-            <span>α7 IV</span>
-          </div>
-          <span class="s_font"></span>
-        </div>
-      </a></li>
-      <li class="pocket swiper-slide"><a href="">
-        <div class="pocketment">
-          <div class="pocketlogo desk">
-            <img src="img/sony_logo.png" alt="">
-          </div>
-          <p>주머니에 넣어 다니며 <br>
-            일상 생활을 캡처하세요</p> 
-          <span class="s_font">
-            DSC-RX0M2
-          </span>
-        </div>
-      </a></li>
-    </ul>
-  </section>
-  <!-- icon -->
-  <section class="w1380 main_icon">
-    <ul class="icon_flex">
-      <li><a href="camerainfo">
-        <div class="icon_img">
-          <img src="img/2_top_icon/camera.png" alt="">
-        </div>
-        <div>카메라</div>
-      </a></li>
-      <li><a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/lens.png" alt="">
-        </div>
-        <div>렌즈</div>
-      </a></li>
-      <li><a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/earphone.png" alt="">
-        </div>
-        <div>이어폰</div>
-      </a></li>
-      <li><a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/Headphone.png" alt="">
-        </div>
-        <div>헤드폰</div>
-      </a></li>
-      <li><a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/gift.png" alt="">
-        </div>
-        <div>이벤트</div>
-      </a></li>
-      <li><a href="notice">
-        <div class="icon_img">
-          <img src="img/2_top_icon/news.png" alt="">
-        </div>
-        <div>소니 소식</div>
-      </a></li>
-      <li>
-        <a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/setting.png" alt="">
-        </div>
-        <div>제품 문제 해결</div>
-      </a>
-      </li>
-      <li><a href="">
-        <div class="icon_img">
-          <img src="img/2_top_icon/help.png" alt="">
-        </div>
-        <div>고객센터</div>
-      </a></li>
-    </ul>
-  </section>
-  <!-- event_top_banner -->
-  <section class="eventbanner w1380">
-    <div class="e_academy">
-      <a href="">
+<section class="main-select">
+  <h2>내게 맞는 찰떡 궁합 안경형은?</h2>
+  <div class="select_type">
+    <span class="checktype">얼굴형 추천</span>
+    <span class="check_toggle">
+      <input type="checkbox" class="toggle-check">
+      <label for="toggle-slide" class="toggle-slide"></label>
+    </span>
+    <span class="checktype">디자인 추천</span>
+  </div>
+<form class="selectform" action="/glassesform" method="post" onsubmit="return selectCheck()">
+  <input type="radio" hidden name="type" class="radio-check" value="얼굴형" checked>
+  <input type="radio" hidden name="type" class="radio-check" value="디자인">
+  <div class="face_type">
+    <h3>나는</h3>
+      <div class="type-select">
+        <img src="img/eggface.png" alt="">
         <div class="ment">
-          <p class="aca_ment">전문가와 함께하는<br class="mobile"> 알파아카데미</p>
-          <div class="ment_bottom">신청하러 가기
-            <img class="ment_arrow" src="img/arrow_gr2.png" alt="">
-          </div>
+          <p class="ment-head">달걀형</p>
+          <p class="ment-explanation"> 얼굴 얼굴이 달걀모양처럼 위에는 동그랗고 턱으로 내려오면서 얇아지는 얼굴형<br>
+            슬림하고 샤프한 얼굴 라인이 특징적입니다. </p>
         </div>
-        <div class="e_academy_img">
-      </a>
       </div>
-    </div>
-    <div class="e_speaker">
-      <a href="">
+      <div class="type-select">
+        <img src="img/ciface.png" alt="">
         <div class="ment">
-          <div class="speak_logo desk"><img src="img/2_top_icon/sound_banner_ment.png" alt=""></div>
-          <p class="speak_ment">크리스탈 사운드 스피커<br class="mobile"> LSPX-S3</p>
-          <div class="ment_bottom">신청하러 가기
-            <img class="ment_arrow" src="img/arrow_w.png" alt="">
-          </div>
+          <p class="ment-head">둥근형</p>
+          <p class="ment-explanation"> 얼굴의 세로보다 가로 비율이 넓어, 전체적으로 부드러운 느낌을 주는 얼굴형입니다.</p>
         </div>
-      </a>
-    </div>
-  </section>
-  <!-- best Rank -->
-  <section class="best_Rank">
-    <article class="rank_wrap w1380">
-      <div class="best">
-        <div class="best_wrap">
-          <h2>베스트 랭킹</h2>
-          <span class="more">
-            <a href="">더보기
-              <span class="more_arrow"></span>
-            </a></span>
-        </div>
-        <h3>최근 가장 많이 팔린 상품</h3>
       </div>
-      <div class="tab_wrap mySwiper">
-        <ul class="best_tab swiper-wrapper">
-          <li class="best_btn click swiper-slide">카메라</li>
-          <li class="best_btn swiper-slide">비디오 카메라</li>
-          <li class="best_btn swiper-slide">오디오</li>
-          <li class="best_btn swiper-slide">헤드폰</li>
-          <li class="best_btn swiper-slide">무선스피커</li>
-        </ul>
+      <div class="type-select">
+        <img src="img/squareface1.png" alt="">
+        <div class="ment">
+          <p class="ment-head">사각형</p>
+          <p class="ment-explanation"> 이마와 볼이 넓 턱이 도드라지는 얼굴형으로 직선적이고 깔끔한  느낌을 주는 얼굴형입니다. </p>
+        </div>
       </div>
-      <div class="best_cont">
-        <div class="img_wrap active">
-          <div class="best_img" id="camera">
-            <div class="camera_1">
-              <span class="square">
-                <div>1</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/camera/ILCE-7RM4A.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">소니 α7R IV</p>
-                  <p class="best_subname">ILCE-7RM4A</p>
-                  <p class="best_price">3,980,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_2">
-              <span class="square">
-                <div>2</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/camera/ZV-E10L.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">소니ZV-E10L</p>
-                  <p class="best_subname">Lens Digital Camera</p>
-                  <p class="best_price">948,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_3">
-              <span class="square">
-                <div>3</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/camera/ILCE-7M4K_1.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">소니 ILCE-7M4K</p>
-                  <p class="best_subname">The Camera</p>
-                  <p class="best_price">3,340,000원</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="img_wrap">
-          <div class="best_img" id="viedo_camera">
-            <div class="camera_1">
-              <span class="square">
-                <div>1</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/viedo_camera/ILME-FX30.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">ILME-FX30 (핸들 킷)</p>
-                  <p class="best_subname">시네마라인 Super 35mm 카메라 (핸들 킷)</p>
-                  <p class="best_price">3,349,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_2">
-              <span class="square">
-                <div>2</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/viedo_camera/ILME-FX30B.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">ILME-FX30B (바디킷)</p>
-                  <p class="best_subname">시네마라인 Super 35mm 카메라 (바디 킷)</p>
-                  <p class="best_price">2,699,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_3">
-              <span class="square">
-                <div>3</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/viedo_camera/PXW-FX9V.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">PXW-FX9V</p>
-                  <p class="best_subname">프리미엄 풀프레임 시네마카메라</p>
-                  <p class="best_price">14,990,000원</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="img_wrap">
-          <div class="best_img" id="audio">
-            <div class="camera_1">
-              <span class="square">
-                <div>1</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/audio/LSPX-S3.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">LSPX-S3</p>
-                  <p class="best_subname">공간을 포근하게 채워주는 오가닉 글래스의 크리스탈 클리어 사운드</p>
-                  <p class="best_price">399,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_2">
-              <span class="square">
-                <div>2</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/audio/PS-LX310BT.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">PS-LX310BTL</p>
-                  <p class="best_subname">간편하게 즐기는 바이닐 사운드</p>
-                  <p class="best_price">299,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_3">
-              <span class="square">
-                <div>3</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/audio/SRS-RA5000.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">SRS-RA5000</p>
-                  <p class="best_subname">소리로 공간을 디자인하다, 디퓨저 사운드 스피커</p>
-                  <p class="best_price">699,000원</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="img_wrap">
-          <div class="best_img" id="headphone_1">
-            <div class="camera_1">
-              <span class="square">
-                <div>1</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/headphone/INZONE H7.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">INZONE H7</p>
-                  <p class="best_subname">고품질 무선 게이밍 헤드셋</p>
-                  <p class="best_price">289,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_2">
-              <span class="square">
-                <div>2</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/headphone/WH-1000XM4.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">WH-1000XM4</p>
-                  <p class="best_subname">몰입을 넘어 소통까지 #벗지않는헤드폰</p>
-                  <p class="best_price">459,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_3">
-              <span class="square">
-                <div>3</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/headphone/WF-1000XM4.png
-                  " alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">WF-1000XM4</p>
-                  <p class="best_subname">헤드폰에 도전하다</p>
-                  <p class="best_price">299,000원</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="img_wrap">
-          <div class="best_img" id="speak">
-            <div class="camera_1">
-              <span class="square">
-                <div>1</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/speaker/LinkBuds.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">LinkBuds</p>
-                  <p class="best_subname">완전히 새로운 라이프 스타일 링크버즈</p>
-                  <p class="best_price">199,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_2">
-              <span class="square">
-                <div>2</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/speaker/WF-C500.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">WF-C500</p>
-                  <p class="best_subname">소니 사운드의 에센스</p>
-                  <p class="best_price">119,000원</p>
-                </div>
-              </a>
-            </div>
-            <div class="camera_3">
-              <span class="square">
-                <div>3</div>
-              </span>
-              <a href="#">
-                <div class="best_img_wrap">
-                  <img src="img/3_best_rank/speaker/WH-1000XM4.png" alt="">
-                </div>
-                <div class="best_ment">
-                  <p class="best_name">WH-1000XM4</p>
-                  <p class="best_subname">몰입을 넘어 소통까지 #벗지않는헤드폰</p>
-                  <p class="best_price">459,000 원</p>
-                </div>
-              </a>
-            </div>
-          </div>
-       </div>
-     </div>
-    </article>
-  </section>
-  <!-- sony_select -->
-  <section class="sony_select w1380">
-    <div class="select_wrap swiper selectSwiper">
-    <h2>소니 스토어의 <span class="desk">스마트</span> 추천 제품</h2>
-    <h3><span class="desk">당신의 삶을 특별하게 해줄 스마트한</span>
-      소니스토어 추천 제품을 살펴보세요.</h3>
-    <div class="select_itemBox swiper-wrapper">
-        <span class="select_item swiper-slide">
-          <a href="">
-            <div class="select_img">
-              <img src="img/4.select_itm/LinkBuds.png" alt="">
-            </div>
-            <div class="select_ment">
-              <p>편안하게 몰입하다, 링크버즈 S</p>
-              <h4>LinkBuds S</h4>
-              <h3>249,000 원</h3>
-            </div>
-         </a>
-        </span>
-        <span class="select_item swiper-slide">
-          <a href="">
-            <div class="select_img">
-              <img src="img/4.select_itm/ILCE-7M4K_1.png" alt="">
-            </div>
-            <div class="select_ment">
-              <p>새 시대, 새 카메라의 시작</p>
-              <h4>ILCE-7M4K</h4>
-              <h3>3,340,000 원</h3>
-            </div>
-         </a>
-        </span>
-        <span class="select_item swiper-slide">
-          <a href="">
-            <div class="select_img">
-              <img src="img/4.select_itm/ZV-E10L.png" alt="">
-            </div>
-            <div class="select_ment">
-              <p>데일리 브이로그 카메라</p>
-              <h4>ZV-E10L</h4>
-              <h3>948,000 원</h3>
-            </div>
-         </a>
-        </span>
-        <span class="select_item swiper-slide">
-          <a href="">
-            <div class="select_img">
-              <img src="img/4.select_itm/LSPX-S3.png" alt="">
-            </div>
-            <div class="select_ment">
-              <p>공간을 포근하게 채우는 사운드</p>
-              <h4>LSPX-S3</h4>
-              <h3>399,000 원</h3>
-            </div>
-         </a>
-        </span>
+    <div class="type-select">
+      <img src="img/trreverface.png" alt="">
+      <div class="ment">
+        <p class="ment-head">역삼각형</p>
+        <p class="ment-explanation"> 이마가 상대적으로 넓고 턱으로 내려올수록 얼굴이 좁아지는 얼굴형 <br>
+          날카로운 얼굴 라인입니다. </p>
+      </div>
     </div>
+    <input type="radio" name="checktype" class="radio-display" value="달걀형">
+    <input type="radio" name="checktype" class="radio-display" value="둥근형">
+    <input type="radio" name="checktype" class="radio-display" value="사각형">
+    <input type="radio" name="checktype" class="radio-display" value="역삼각형">
+  </div>
+  <div class="design_type typecheck">
+    <h3>내가 원하는 느낌은</h3>
+    <div class="type-select">
+      <p class="design_img nature"></p>
+      <div class="ment">
+        <p class="ment-head">네츄럴한 디자인</p>
+        <p class="ment-explanation">안경을 쓴듯 안 쓴듯, 원래의 내 느낌을 그대로 가져가고 싶어요.</p>
+      </div>
     </div>
-  </section>
-  <!-- event -->
-  <section class="event w1380">
-    <div class="event_wrap">
-      <h2>소니를 색다르게 만나보세요.</h2>
-      <h3>소니 스토어만의 단독 기획전</h3>
-      <div class="event_cont">
-        <div>
-          <img src="img/5.event/HALLOWEEN.jpg" alt="">
-          <p>HAPPY HALLOWEEN</p>
-        </div>
-        <div>
-          <img src="img/5.event/Battlexspc.jpg" alt="">
-          <p>배틀그라운드 X INZONE</p>
-        </div>
-        <div>
-          <img src="img/5.event/Srs-XB13.jpg" alt="">
-          <p>팝한 컬러 SRS-XB13</p>
-        </div>
-        <div>
-          <img src="img/5.event/Event-List-Banner.jpg" alt="">
-          <p>빛과 소리로 마음을 채우다</p>
-        </div>
+    <div class="type-select">
+      <p class="design_img suit"></p>
+      <div class="ment">
+        <p class="ment-head">단정한 디자인</p>
+        <p class="ment-explanation">안경을 써서 차분하고 단정한 느낌을 주고 싶어요.</p>
+      </div>
+    </div>
+    <div class="type-select">
+      <p class="design_img soft"></p>
+      <div class="ment">
+        <p class="ment-head">부드러운 디자인</p>
+        <p class="ment-explanation">안경으로 부드러운 이미지를 연출하고 싶어요.</p>
+      </div>
+    </div>
+    <div class="type-select">
+      <p class="design_img style"></p>
+      <div class="ment">
+        <p class="ment-head">감각적인 디자인</p>
+        <p class="ment-explanation"> 어디에서나 어울리고, 세련된 느낌. <br>
+          패션용으로도 손색 없는 안경을 원해요.</p>
+      </div>
+    </div>
+    <input type="radio" name="checktype" class="radio-display" value="내츄럴한 디자인">
+    <input type="radio" name="checktype" class="radio-display" value="단정한 디자인">
+    <input type="radio" name="checktype" class="radio-display" value="부드러운 디자인">
+    <input type="radio" name="checktype" class="radio-display" value="감각적인 디자인">
+  </div>
+  <input type="submit" class="btn" value="확인하기">
+</form>
+</section>
 
-      </div>
-    </div>
-  </section>
-      <!-- rego_event -->
-  <section class="rego">
-    <div class="rego_wrap w1380">
-      <h2>정품 등록 이벤트</h2>
-      <div class="swiper regoSwiper">
-        <div class="rego_event swiper-wrapper">
-          <div class="rego_cont swiper-slide">
-            <img src="img/6.rego_event/SEL50F12GM.jpg" alt="">
-            <p>이달의 렌즈 정품등록 이벤트 </p>
-            <span>SEL50F12GM</span>
-          </div>
-          <div class="rego_cont swiper-slide">
-            <img src="img/6.rego_event/GAME.jpg" alt="">
-            <p>인존 H9 정품등록 이벤트 </p>
-            <span>완벽한 몰입을 경험하다 </span>
-          </div>
-          <div class="rego_cont swiper-slide">
-            <img src="img/6.rego_event/LENS.jpg" alt="">
-            <p>렌즈 정품등록 이벤트</p>
-            <span>가을, 풍경을 담다</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--event_bottom_banner -->
-  <section class="bottom_event w1380">
-    <div class="bottom_event_wrap">
-      <div class="linkbugs">
-        <div class="bottom_event_ment">
-        <h2>가볍게, 자유롭게<br class="mobile"> 몰입하는 /링크버즈 시리즈</h2>
-        <p>자세히보기<img src="img/arrow_gr.png" alt=""></p>
-       </div>
-      </div>
-      <div class="membership">
-        <div class="bottom_event_ment">
-          <h2>소니스토어만의<br class="mobile"> 특별한 멤버십</h2>
-          <p>자세히보기<img src="img/arrow_w.png" alt=""></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- store -->
-  <section class="store">
-    <div class="store_wrap w1380">
-      <div class="store_ment">
-        <h2>소니 스토어 이용 안내</h2>
-        <h3>소니 전 제품을 직접 체험하세요.</h3> 
-      </div>
-      <div class="store_img">
-        <div>
-          <div class="store_img_ment">
-            <p>방문 전 매장위치를 확인할 수 있는</p>
-            <span>매장찾기</span>
-          </div>
-          <img src="img/7.footer_img/store.png" alt="">
-        </div>
-        <div>
-          <div class="store_img_ment">
-            <p>서비스 센터에 수리하는 동안에도<br>
-              소니와 함께하는</p>
-            <span>제품 대여 서비스</span>
-          </div>
-          <img src="img/7.footer_img/rent.png" alt="">
-        </div>
-        <div>
-          <div class="store_img_ment">
-            <p>소중한 추억을 USB와 DVD로 소중하게</p>
-            <span>영상변환 서비스</span>
-          </div>
-          <img src="img/7.footer_img/change.png" alt="">
-        </div>
-        <div>
-          <div class="store_img_ment">
-            <p>회사 비품, 납품, 이벤트 상품<br>
-              소니와 함께하세요.</p>
-            <span>기업구매</span>
-          </div>
-          <img src="img/7.footer_img/ico_buy_company.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<script src="js/mainTab.js"></script>
 <script src="js/main.js"></script>
